@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 import locale
 
 try:
-    locale.setlocale( locale.LC_ALL , 'en_US' )
+    locale.setlocale( locale.LC_ALL , 'en_US.UTF-8' )
 except locale.Error:
     locale.setlocale( locale.LC_ALL , 'us_us' )
 
