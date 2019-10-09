@@ -4,7 +4,10 @@ import dash_html_components as html
 import plotly.graph_objs as go
 import locale
 
-locale.setlocale(locale.LC_ALL,'EN_US')
+try:
+    locale.setlocale( locale.LC_ALL , 'en_US' )
+except locale.Error:
+    locale.setlocale( locale.LC_ALL , 'us_us' )
 
 
 ########### Set up the chart
